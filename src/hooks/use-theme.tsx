@@ -18,6 +18,10 @@ const ThemeContext = React.createContext<ThemeContextType | undefined>(undefined
 
 const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
   const [theme, setTheme] = React.useState<Theme>(Theme.DARK);
+<<<<<<< HEAD
+=======
+  
+>>>>>>> 89cd6d1 (first commit)
 
   const toggleTheme = () => {
     if (theme === Theme.LIGHT) {
@@ -33,6 +37,10 @@ const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
 
   useEffect(() => {
     const localTheme = localStorage.getItem('theme');
+<<<<<<< HEAD
+=======
+    document.documentElement.classList.add(Theme.DARK);
+>>>>>>> 89cd6d1 (first commit)
     if (localTheme) {
       setTheme(localTheme as Theme);
       if (localTheme === Theme.DARK) {

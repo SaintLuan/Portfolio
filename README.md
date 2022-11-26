@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Pofology
 
 Pofology – is a personal portfolio template build with Typescript, NextJS and Tailwindcss. This template is designed for building beautiful personal portfolio website. It has a great customisable option. Fully responsive and looks great on any devices. This template contains custom made pages for your portfolios & blog posts. It’s suitable for designers, developers or freelancers who want to show their projects and services, share their thoughts and knowledge with their own platform. Finally it’s a clean & minimal design.
@@ -104,3 +105,30 @@ There are two main folders `public` & `src` and some other configuration related
 
 ![Pofology Dark](public/screenshot_01.png)
 ![Pofology Dark](public/screenshot_02.png)
+=======
+
+![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+
+
+# Luan Santos | Portfolio
+This website, is an compiled of all my works since 2016!
+
+## Funcionalidades
+
+- Dark and Light Themes
+- Responsive
+- Custom CMS integrated
+
+
+## Stack utilizada
+
+**Front-end:** Typescript, Next, TailwindCSS
+
+**Back-end:** Node, Express
+
+
+## Autores
+
+- [@Luan Santos](https://www.github.com/SaintLuan)
+
+>>>>>>> 89cd6d1 (first commit)
