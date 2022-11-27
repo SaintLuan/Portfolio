@@ -26,7 +26,6 @@ type Props = {
 };
 
 const WorkDetail: React.FunctionComponent<Props> = ({ work }) => {
-  console.log(work);
   return (
     <AppLayout title={work.title}>
       <div className="container">
