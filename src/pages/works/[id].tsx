@@ -7,12 +7,13 @@ import Link from 'next/link';
 import Slider, { Settings } from 'react-slick';
 
 const settings: Settings = {
-  dots: false,
+  dots: true,
   infinite: false,
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: false,
   arrows: true,
+  fade: true,
 };
 
 type Props = {
@@ -25,38 +26,59 @@ type Props = {
 };
 
 const WorkDetail: React.FunctionComponent<Props> = ({ work }) => {
+  console.log(work);
   return (
     <AppLayout title={work.title}>
       <div className="container">
         <div className="mt-24 flex flex-col items-center justify-center">
           <h1 className="text-center text-2xl font-semibold sm:text-3xl md:text-4xl">{work.title}</h1>
           <p className="mt-4 flex items-center text-gray-400">
-            <span>{work.publishedAt}</span>
-            <span className="mx-2 h-1.5 w-1.5 rounded-full bg-primary-500"></span>
             <span>{work.category}</span>
+            {/* <span className="mx-2 h-1.5 w-1.5 rounded-full bg-primary-500"></span>
+            <span>{work.publishedAt}</span> */}
           </p>
         </div>
+        <div className="my-10">
+          <h3 className="text-xl font-semibold">Summary</h3>
+
+          <article className="mt-4">
+            {
+              work.description.map((description) => (
+                description.type === 'paragraph' ?
+                  <p key={description.text}>
+                    {description.text}
+                  </p>
+                  :
+                  <>
+                    {description.text}
+                  </>
+                
+              ))
+            }
+          </article>
+          
+          {/* <p className="mt-4">
+            
+          </p> */}
+          
+        </div>
+
         <div className="mt-10">
           <Slider {...settings}>
             {work.images.map((image, index) => (
               <div className="overflow-hidden rounded-xl" key={index}>
-                <Image src={image} height={720} width={1280} layout="responsive" alt={work.title} />
+                <Image src={image.screenshot.url} height={400} width={750} layout="responsive" alt={work.title} />
               </div>
             ))}
           </Slider>
           <div className="mt-6 flex justify-center">
-            {/* <Link href={work.previewUrl}>
+            <Link href={work.previewUrl} target="_blank">
               <a className="btn">Live Preview</a>
-            </Link> */}
+            </Link>
           </div>
         </div>
 
-        <div className="my-10">
-          <h3 className="text-xl font-semibold">Summary</h3>
-          {/* <p className="mt-4">{work.description}</p> */}
-          <h3 className="mt-10 text-xl font-semibold">Feature List</h3>
-          
-        </div>
+        
 
         
 

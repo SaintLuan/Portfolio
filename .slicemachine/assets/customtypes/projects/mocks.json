@@ -1,0 +1,59 @@
+{
+  "id": "mock-doc-id",
+  "url": null,
+  "type": "projects",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
+  "data": {
+    "title": "got",
+    "subtitle": "weak",
+    "category": "Web App",
+    "description": [
+      {
+        "type": "paragraph",
+        "text": "Id do fugiat reprehenderit incididunt consequat pariatur ullamco ut eu. Fugiat mollit est mollit incididunt esse non amet.",
+        "spans": []
+      }
+    ],
+    "previewUrl": {
+      "link_type": "Web",
+      "url": "http://google.com"
+    },
+    "publishedAt": "2020-03-07",
+    "thumbnail": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1579931794097-0ad001e51edb"
+    },
+    "features": [
+      {
+        "type": "paragraph",
+        "text": "Occaecat ea deserunt esse amet labore ipsum eiusmod ex enim. Adipisicing ex in cupidatat ullamco sunt.",
+        "spans": []
+      }
+    ],
+    "images": [
+      {
+        "screenshot": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": null,
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c"
+        }
+      }
+    ]
+  }
+}

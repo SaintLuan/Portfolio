@@ -19,13 +19,11 @@ const getWorks = async (): Promise<Work[]> => {
       thumbnailUrl: val.data.thumbnail.url,
       description: val.data.description,
       images: val.data.images,
-      previewUrl: val.data.category,
-      publishedAt: val.data.category,
-      featureList: val.data.category,
+      previewUrl: val.data.previewUrl.url,
+      featureList: val.data.features,
     };
     projects.push(projectObj);
   });
-
   return projects;
 };
 

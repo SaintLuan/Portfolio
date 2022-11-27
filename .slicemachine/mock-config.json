@@ -1,0 +1,20 @@
+{
+  "_cts": {
+    "projects": {
+      "description": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      },
+      "features": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      },
+      "images": {}
+    },
+    "post": {}
+  }
+}

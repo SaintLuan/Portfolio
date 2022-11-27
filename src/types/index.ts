@@ -27,13 +27,19 @@ export type Work = {
   title: string;
   category: string;
   thumbnailUrl: string;
-  description?: [{
-    type: string;
-    text: string;
+  description?: [
+    {
+      type: string;
+      text: string;
+      spans: string;
+    }
+  ];
+  images: [{
+    screenshot:{
+      url: string;
+    }
   }];
-  images: string[];
   previewUrl: string;
-  publishedAt: string;
   featureList: string;
 };
 
